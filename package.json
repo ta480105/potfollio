@@ -1,0 +1,31 @@
+{
+  "name": "tabish-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": { "node": ">=20.12" },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "dev:server": "node --watch server.mjs",
+    "start": "node server.mjs",
+    "test:email": "node scripts/test-email.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "express": "^4.21.2",
+    "nodemailer": "^6.10.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "@types/express": "^4.17.21",
+    "@types/nodemailer": "^6.4.17"
+  }
+}
