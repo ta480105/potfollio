@@ -154,7 +154,7 @@ function App() {
         <section className="section-wrap section-block work-section" id="work">
           <div className="section-heading"><div><div className="eyebrow">02 / SELECTED CONCEPTS</div><h2>Ideas made <span className="gradient-text">visible.</span></h2></div><p className="section-intro">A few self-initiated concepts to demonstrate the kind of digital experience I can create. These are not client projects.</p></div>
           <div className="project-grid">
-            {siteConfig.projects.map((project, index) => <article className={`project-card project-${project.style}`} key={project.id}>
+            {siteConfig.projects.map((project) => <article className={`project-card project-${project.style}`} key={project.id}>
               <button className="project-preview" onClick={() => setSelectedProject(project.id)} aria-label={`View details for ${project.name}`}>
                 <div className="preview-top"><span className="preview-brand">{project.name}<b>.</b></span><span className="preview-pill">{project.style === 'food' ? 'GOOD FOOD, GOOD MOOD' : project.style === 'fitness' ? 'MOVE WITH PURPOSE' : 'MADE LOCAL'}</span></div>
                 {project.style === 'food' && <div className="food-art"><div className="food-plate"><div className="food-dish"/><div className="food-leaf leaf-a"/><div className="food-leaf leaf-b"/></div><span className="food-caption">FRESH. LOCAL. DELICIOUS.</span></div>}
